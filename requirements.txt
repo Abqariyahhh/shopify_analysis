@@ -1,0 +1,8 @@
+streamlit
+pandas
+requests
+python-dotenv
+transformers
+plotly
+wordcloud
+matplotlib
