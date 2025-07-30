@@ -12,9 +12,11 @@ import io
 from wordcloud import STOPWORDS
 import streamlit as st
 
+import os
+
 # ====== ENVIRONMENT VARIABLES ======
 load_dotenv()
-OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
+OPENROUTER_API_KEY = st.secrets["OPENROUTER_API_KEY"]
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 MODEL = "openai/gpt-4o-mini"
 
